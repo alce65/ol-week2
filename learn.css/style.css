@@ -24,7 +24,7 @@ p {
 /* Selector de id - NO SE USA */
 /* #p1 {
     text-decoration: underline;
-} */
+}  */
 
 /* Multiples selectores */
 
@@ -85,4 +85,8 @@ p:hover {
     transform: scale(1.4);
 }
 
-// section p:nth-of-type(2n+1)
+/* section p:nth-of-type(2n+1) */
+
+.alert {
+    color: red !important;
+}
