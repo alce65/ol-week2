@@ -1,0 +1,88 @@
+/* Selector de etiqueta */
+p {
+    color: brown;
+    font-style: italic;
+}
+
+/* Selector de clase */
+.sub {
+    text-decoration: underline;
+}
+
+/* Selector de atributo */
+
+/* [class$="sub"] */
+
+[title] {
+    cursor: pointer;
+}
+
+[id='p1'] {
+    font-weight: 900;
+}
+
+/* Selector de id - NO SE USA */
+/* #p1 {
+    text-decoration: underline;
+} */
+
+/* Multiples selectores */
+
+header,
+footer,
+.hight {
+    background-color: brown;
+    color: rgb(255, 224, 185);
+}
+
+/* Principios de diseño: DRY */
+
+footer {
+    font-style: italic;
+}
+
+/* Selectores combinados */
+
+section p {
+    /* Selector de descendientes */
+    background-color: beige;
+}
+
+section > p {
+    /* Selector de descendientes directos (hijos) */
+    font-weight: 900;
+}
+
+section ~ article {
+    /* Selector de hermanos siguientes */
+    background-color: azure;
+}
+
+section + article {
+    /* Selector de hermano adyacentes */
+    color: rgb(72, 132, 132);
+    font-weight: 900;
+}
+
+/* Pseudoelementos */
+p::first-letter {
+    font-size: 2rem;
+}
+
+section + article::before {
+    content: '➕';
+}
+section + article::after {
+    content: '';
+    display: block;
+    border-bottom: 1px solid blue;
+    width: 50%;
+    margin: 1rem auto;
+}
+
+/* Pseudoclases */
+p:hover {
+    transform: scale(1.4);
+}
+
+// section p:nth-of-type(2n+1)
